@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+/home/vitto/java/.metadata/.plugins/org.eclipse.jdt.core
-1865797976.index
-3672224818.index
-2317525855.index
