@@ -1,0 +1,59 @@
+FUNZIONI PRINCIPALI SUI PROCESSI
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int fd[2];
+pid_t pid;
+
+pid = fork();
+pipe(fd);
+
+write(fd[1],&n,sizeof(n))
+read(fd[0],&n,sizeof(n))
+
+FUNZIONI PRINCIPALI SUI THREAD
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <semaphore.h> //se si usano i semafori
+
+pthread_t thread
+pthread_mutex_t mutex
+pthread_cond_t cond
+sem_t semaforo
+
+pthread_mutex_init(&mutex,NULL)
+pthread_cond_init(&cond,NULL)
+sem_init(&semaforo,0,1) // se lavori sui processi  sem_init(&semaforo,1,1)
+
+pthread_mutex_lock(&mutex)
+pthread_mutex_unlock(&mutex)
+
+pthread_cond_signal(&cond)
+phtread_cond_wait(&cond,&mutex)
+sem_wait(&semaforo)
+sem_post(&semaforo)
+
+pthread_cancel(thread)
+
+pthread_create(&thread,NULL,funzione,NULL)
+pthread_join(thread, NULL)
+
+
+pthread_mutex_destroy(&mutex)
+pthread_cond_destroy(&cond)
+sem_destroy(&semaforo)
+
+FUNZIONI PRINCIPALI SUI FILE
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+
+int f = open("nomefile.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644) //per creare un file
+int f = open("nomefile.txt", O_RDONLY) //se invece devi solo aprire il file
+lseek(f, BYTE , SEEK_SET)
+
