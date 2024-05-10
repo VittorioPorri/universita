@@ -1,0 +1,2 @@
+per aprire il swipl -s name.pl
+per chiuderlo CTRL+C e poi digitare il carattere e
