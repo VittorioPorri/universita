@@ -127,9 +127,10 @@ Parallelamente, si intende conservare informazioni riguardanti normative e leggi
 | Servizi            | I servizi sono attività o prestazioni offerte dalla base per soddisfare specifiche esigenze della popolazione          | Prestazioni,Funzioni                         |
 | Infrastrutture     | Insieme di strutture fisiche necessarie per il funzionamento di una società                                            | Strutture,Impianti                           |
 | Tribunale          | istituzione pubblica dove vengono amministrati la giustizia e il diritto                                               | Aula di giudizio                             |
+| Corpo di Leggi     | Uni corpo che raccoglie tutte le regole che vanno rispettate nella base                                                | Costituzione                                 |
 ## Schema Entity Relationship (ER)
 
-![[ER.jpeg]]
+
 
 ## Individuazione ed elenco delle operazioni sui dati per la realizzazione delle funzioni 
 
@@ -179,5 +180,10 @@ Parallelamente, si intende conservare informazioni riguardanti normative e leggi
 - In ogni base deve esseci un magazzino dove poter riporre le risorse che quella base produce
 - Ogni base deve avere almeno un ospedale e una scuola per garantire la sicurezza e l'istruzione della popolazione
 - È necessario che ogni persona che abbia compiuto 18 anni abbia almeno un lavoro
-- Le infrastutture possno serire più basi 
+- Le infrastutture possono servire più basi
 - Ogni Base ha la possibilità di stabile le proprie leggi  
+
+
+
+
+
