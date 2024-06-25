@@ -220,8 +220,49 @@ public class Main {
             }
         }
 
-      -> Metodi 
-    */
+      ->Metodi o funzioni
+        cucinaPranzo("pasta");
+
+        //fuori dal main
+        static void cucinaPranzo(String cibo){
+        System.out.println("sto cucinando " + cibo);
+        }
+        static int addizione(int a,int b) {
+        int risultato = a + b;
+        return risultato;
+        }
+
+      ->Overloaded Methods
+        //java ci permette di utilizzare gli stessi nomi dei metodi a patto che si cambino i il numero o il tipo di parametri
+        int tot1 = addizione(10,4);
+        float  tot2 = addizione(0.4f,0.7f);
+
+        System.out.println(tot1);
+        System.out.println(tot2);
+
+        //fuori del main
+         static int addizione(int a, int b){
+        int tot = a - b;
+        return tot;
+        }
+
+        static float addizione(float a, float b){
+            float tot = a + b;
+            return tot;
+        }
+
+      ->Introduzione alla programmazione ad oggetti OOP(Object Oriented Programing)
+
+        Persona persona1 = new Persona(); //creiamo una persona, prima istanza di persona
+        Persona persona2 = new Persona(); // seconda istanza della classe persona
+
+        System.out.println(persona1.colore_preferito);
+        persona1.cammina();
+
+      ->Costruttori di classe
+     */
 
     }
+
+
 }
