@@ -1,16 +1,17 @@
 public class Persona {
-    String nome = "Luca";
-    String cognome = "Rossi";
-    int eta = 25;
-    String colore_preferito = "Blu";
+    String nome ;
+    String cognome;
+    int eta ;
+    String colore_preferito;
 
-    void saluta(){
-        System.out.println("ciaoo");
+    Persona(String nome, String cognome, int eta , String colore_preferito){
+        // viene chiamato ogni volta che si crea una nuova persona
+
+        // this viene utilizzato per identificare una istanza della classe
+        this.nome = nome;
+        this.cognome  = cognome;
+        this.eta = eta;
+        this.colore_preferito = colore_preferito;
     }
 
-    void cammina(){
-        for(int i = 0; i < 10; i++){
-        System.out.println("cammino ... ");
-        }
-    }
 }

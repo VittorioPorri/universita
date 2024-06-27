@@ -260,6 +260,21 @@ public class Main {
         persona1.cammina();
 
       ->Costruttori di classe
+        // grazie al costruttore definito nella classe Persona possiamo identificare due differenti persone
+        Persona persona1 = new Persona("Marco","Rossi",25,"Blu");
+        Persona persona2 = new Persona("Luca","Rossi",23,"Rosso");
+
+        System.out.println(persona1.colore_preferito);
+        System.out.println(persona2.colore_preferito);
+
+      ->scope delle variabili
+        //Le variabili hanno un diversa priorità
+
+      ->costruttori sovraccaricati (overloaded constructors)
+        //java ci permette di utilizzare gli stessi nomi per i costruttori a patto che si cambino i il numero o il tipo di parametri
+        Pizza pizza1 = new Pizza("integrale","pomodoro","mozzarella","ananas");
+        Pizza pizza2 = new Pizza("cereali");
+        Pizza pizza3 = new Pizza("integrale","pomodoro");
      */
 
     }
