@@ -2,9 +2,10 @@
  *   import java.util.Scanner;
  */
 
-import java.util.ArrayList;
+
 
 public class Main {
+
     public static void main(String[] args) {
     /*
       ->Stampo una stringa
@@ -275,9 +276,82 @@ public class Main {
         Pizza pizza1 = new Pizza("integrale","pomodoro","mozzarella","ananas");
         Pizza pizza2 = new Pizza("cereali");
         Pizza pizza3 = new Pizza("integrale","pomodoro");
-     */
+
+      ->metodo toString
+        retituisce la locazione in memoria ma può essere sovrascritto
+        Persona persona  = new Persona("Luca", "Rossi", 25, "blu");
+        System.out.println(persona.toString());
+
+      ->array di oggetti
+        Persona[] persone = new Persona[3];
+
+        Persona persona1 = new Persona("Luca", "Rossi", 25, "blu");
+        Persona persona2 = new Persona("Marco", "Verdi", 35, "rosso");
+        Persona persona3 = new Persona("Anna", "Neri", 23, "giallo");
+
+        persone[0] = persona1;
+        persone[1] = persona2;
+        persone[2] = persona3;
+
+        Persona[] persone2 = {persona1,persona2,persona3};
+
+        System.out.println(persone);
+
+      ->Oggetti come parametri
+        Persona persona1 = new Persona("Luca", "Rossi", 25, "blu");
+        Persona persona2 = new Persona("Marco", "Verdi", 35, "rosso");
+
+        persona1.Saluta(persona2);
+
+      ->final e static
+        //final indica una variabile che non può essere modificata nel corso del programma
+        final int prova = 5;
+        //non puoi più fare prova = 10;
+
+        System.out.println(prova);
+
+        //static è una variabile condivisa tra tutte le istanze vedi nella classe Persona
+
+        Persona persona1 = new Persona("Luca", "Rossi", 25, "blu");
+        Persona persona2 = new Persona("Marco", "Verdi", 35, "rosso");
+        Persona persona3 = new Persona("Anna", "Neri", 23, "giallo");
+
+        Persona.numero_di_persone();
+
+      ->Eridarietà
+        Insegnante insegnante1 = new Insegnante("Luca","Rossi",25,"blu","storia");
+        Studente studente1 = new Studente("Marco", "Verdi", 35, "rosso","storia","5D");
+
+        //se studente estende persona ho accesso di default a tutti i metodi di persona
+        studente1.Saluta(insegnante1);
+
+      ->Classi astratte
+        // classi che vengono eslusivamente ereditate dalle altre classi
+        //non posso usare Veicolo veicolo = new veicolo(); per creare un oggetto di una classe astratta
+        Macchina macchina = new Macchina("CC953CX");
+        System.out.println(macchina.targa);
+        macchina.Muovi();
+        macchina.Frena();
+
+      ->Modificatori di accesso
+                          class   package subclass   word
+          public          si      si      si         si
+          protected       si      si      si         no
+          default         si      si      no         no
+          private         si      no      no         no
+
+      ->Incapsulamento getters/setters
+        People persona1 = new People("Luca","Rossi");
+        //System.out.println(persona1.nome); le variabili sono private quindi abbiamo bisogno di metodi Getters/Setters
+
+        System.out.println(persona1.getCognome());
+
+        persona1.setCognome("Verdi");
+        System.out.println(persona1.getCognome());
+
+
+      */
+
 
     }
-
-
 }
