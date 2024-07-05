@@ -9,6 +9,7 @@ import Pacchetto2.*; //importo tutto il pacchetto2
 */
 
 public class Main {
+    /*
     public static void main(String[] args){
         B prova_B = new B();
         A prova_A = new A();
@@ -17,5 +18,7 @@ public class Main {
         //System.out.println(prova_B.nome);
         //System.out.println(prova_A.nome);
 
+
     }
+     */
 }

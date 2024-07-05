@@ -1,5 +1,4 @@
 public class People {
-
     private String nome;
     private String cognome;
 
@@ -8,21 +7,30 @@ public class People {
         this.cognome = cognome;
     }
 
-    // accediamo al nome da dentro la classe e buttiamo fuori il nome attraverso il metodo public
-    public String getNome(){
+    People(People persona){
+        this.setNome(persona.getNome());
+        this.setCognome(persona.getCognome());
+    }
+
+    public String getNome() {
         return nome;
     }
 
-    public String getCognome(){
+    public String getCognome() {
         return cognome;
     }
 
-    // impostiamo il nome da dentro la classe
-    public void setNome(String nome){
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setCognome(String cognome){
+    public void setCognome(String cognome) {
         this.cognome = cognome;
+    }
+
+    public void copy(People persona){
+        this.setNome(persona.getNome());
+        this.setCognome(persona.getCognome());
+
     }
 }

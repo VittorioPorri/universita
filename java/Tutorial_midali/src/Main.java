@@ -349,9 +349,116 @@ public class Main {
         persona1.setCognome("Verdi");
         System.out.println(persona1.getCognome());
 
+      ->copiare oggetti
 
-      */
+        People persona1 = new People("Luca","Rossi");
+        People persona2 = new People("Marco","Verdi");
+
+        //persona1 = persona2;  non va bene perche diventano lo stesso oggetto situati nella stessa cella di memoria
+
+        persona2.copy(persona1);
+
+        System.out.println(persona1);
+        System.out.println(persona2);
+        System.out.println();
+        System.out.println(persona1.getNome());
+        System.out.println(persona1.getCognome());
+        System.out.println();
+        System.out.println(persona2.getNome());
+        System.out.println(persona2.getCognome());
+        System.out.println();
+
+        // se modifico la persona1 la persona2 non viene influenzata dalla modifica
+        persona1.setNome("Orazio");
+        System.out.println(persona1.getNome());
+        System.out.println(persona2.getNome());
 
 
+        People persona3 = new People(persona1);
+        System.out.println(persona3);
+        System.out.println(persona3.getNome());
+        System.out.println(persona3.getCognome());
+
+      ->Interfaccia
+
+        Leone leone = new Leone();
+        Gazzella gazzella = new Gazzella();
+        Pesce pesce = new Pesce();
+
+        leone.Caccia();
+        gazzella.Scappa();
+        pesce.Scappa();
+        pesce.Caccia();
+
+      ->Polimorfismo
+        è capacità di un oggetto di identificarsi con più tipi di dato
+
+        Studente studente1 = new Studente("Luca","Rossi",12,"blu","Storia","4D");
+        Insegnante insengante1 = new Insegnante("Marco","Verdi",35,"verde","Storia");
+
+        Persona[] classe = {studente1,insengante1}; // non si generano problemi proprio per il polimofismo
+
+      ->Gestire le exceptions
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Inserisci il primo numero: ");
+            int x = scanner.nextInt();
+
+            System.out.print("Inserisci il secondo numero: ");
+            int y = scanner.nextInt();
+
+            System.out.printf("la divisione è %d\n", x/y);
+
+        }catch (ArithmeticException e){
+            System.out.println("non puoi dividere per zero");
+        }catch(InputMismatchException e){
+            System.out.println("non puoi dividere un numero per un stringa");
+        }catch(Exception e){
+            System.out.println("Problema");
+        }finally {
+            System.out.println("Lo eseguo sempre");
+            scanner.close();
+        }
+      ->File
+        File file = new File("prova.txt");//posso inserire anche dei path
+
+        if(file.exists()) {
+            System.out.println("il file esiste");
+            System.out.println(file.getAbsolutePath());
+            //per eliminare il file file.delete();
+        }else{
+            System.out.println("il file non esiste");
+        }
+
+        //per scrivere in un file è consigliabile metterlo in un try
+        try {
+            FileWriter writer = new FileWriter("proca.txt");
+            writer.write("Ciao sono vittorio\nsto facendo il corso di java ");
+            //per aggiungere righe in un file già scritto
+            writer.append("\nnuova riga");
+            writer.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        //per leggere invece
+        try {
+            FileReader reader = new FileReader("proca.txt");
+            int date = reader.read(); // valore asii del primo carattere
+            while(date != -1){
+                System.out.print((char)date);
+                date = reader.read();
+            }
+            System.out.println(date);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+      ->Casting
+        int x = (int)9.5;
+     */
     }
+
 }
