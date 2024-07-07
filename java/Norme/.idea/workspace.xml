@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae1499b0-24c5-497f-9ddf-844217042372" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Scuola_superiore/src/Classe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scuola_superiore/src/Scuola.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Scuola_superiore/src/Studenti.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial_midali/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial_midali/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial_midali/src/Pacchetto1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial_midali/src/Pacchetto1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tutorial_midali/src/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Tutorial_midali/src/People.java" afterDir="false" />
+    <list default="true" id="0b28e306-7ed3-4ba4-917c-125e542f9db2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Archivio/src/Disoccupato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Archivio/src/Impiegato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Archivio/src/Libero_Professionista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Archivio/src/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Vini/src/Grappe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Vini/src/Vini.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tutorial/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tutorial/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +23,6 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -29,9 +30,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2imzWGh2wPN62i1XQXvC8XKXkqg" />
+  <component name="ProjectId" id="2irqMw4NsX3ywLZHKw3YdqvJ3H0" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -41,7 +42,6 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
@@ -50,11 +50,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ae1499b0-24c5-497f-9ddf-844217042372" name="Changes" comment="" />
-      <created>1720110573759</created>
+      <changelist id="0b28e306-7ed3-4ba4-917c-125e542f9db2" name="Changes" comment="" />
+      <created>1720258998981</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1720110573759</updated>
+      <updated>1720258998981</updated>
     </task>
     <servers />
   </component>
