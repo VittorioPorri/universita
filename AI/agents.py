@@ -44,6 +44,7 @@ from time import sleep
 import random
 import copy
 import collections
+collections.Callable = collections.abc.Callable
 
 
 # ______________________________________________________________________________
