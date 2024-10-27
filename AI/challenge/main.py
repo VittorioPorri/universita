@@ -62,7 +62,10 @@ def clear_sentence(sentence):
 
 
 if __name__ == "__main__":
-    df = read_csv("./data/test.csv")
+    df = read_csv("/home/vitto/github/universita/AI/challenge/data/train.csv")
+    
+    """ 
+    # Per il file train.csv
 
     i = 0
     for id, text in zip(df['ID'].tolist(), df['Text'].tolist()):
@@ -72,16 +75,16 @@ if __name__ == "__main__":
         i += 1
         if i > 15:
             break
+    """
 
+    # Per il file test.csv
 
-
-
-    # i = 0
-    # for id, text, label in zip(df['ID'].tolist(), df['Text'].tolist(), df['Label'].tolist()):
-    #     id_intero = int(id)
-    #     # print(f"{id=}\t{id_intero=}\t{text=}\t{label=}")
-    #     clear_sentence(text)
-    #     print(50*"*")
-    #     i += 1
-    #     if i > 15:
-    #         break
+    i = 0
+    for id, text, label in zip(df['ID'].tolist(), df['Text'].tolist(), df['Label'].tolist()):
+        id_intero = int(id)
+        #print(f"{id=}\t{id_intero=}\t{text=}\t{label=}")
+        clear_sentence(text)
+        print(50*"*")
+        i += 1
+        if i > 5:
+            break
