@@ -31,22 +31,22 @@ def top(P, len_P):
     
     return P[len_P - 1]
 
-P  = []
-len_P = len(P)
-print(f"La lista è vuota -> {isEmpty(P, len_P)}")
-for i in range(10):
-    len_P = push(P, len_P, i)
-
-print(f"Lista dopo gli inserimento -> {P}")
-print(f"La lista è vuota -> {isEmpty(P, len_P)}")
-
-for i in range(7):
-    P, e, len_P = pop(P,len_P)
-    print(f"Ho eliminato l'elemento -> {e}") 
-
-print(f"Lista dopo le cancellazione -> {P}")
-
-push(P, len_P, 10)
-print(f"Lista dopo l'ultimo inserimento -> {P}")
-
-print(f"L'elemento in cima è -> {top(P,len_P)}")
+#P  = []
+#len_P = len(P)
+#print(f"La lista è vuota -> {isEmpty(P, len_P)}")
+#for i in range(10):
+#    len_P = push(P, len_P, i)
+#
+#print(f"Lista dopo gli inserimento -> {P}")
+#print(f"La lista è vuota -> {isEmpty(P, len_P)}")
+#
+#for i in range(7):
+#    P, e, len_P = pop(P,len_P)
+#    print(f"Ho eliminato l'elemento -> {e}") 
+#
+#print(f"Lista dopo le cancellazione -> {P}")
+#
+#push(P, len_P, 10)
+#print(f"Lista dopo l'ultimo inserimento -> {P}")
+#
+#print(f"L'elemento in cima è -> {top(P,len_P)}")

@@ -27,24 +27,25 @@ def first(C, current):
         
     return C[current]
 
-C = []
-current = 0
+#C = []
+#current = 0
+#
+#print(f"La coda è vuota -> {isEmpty(C)}")
+#for i in range(10):
+#    len_P = enqueue(C,i)
+#
+#print(f"Coda dopo gli inserimento -> {C}")
+#print(f"La coda è vuota -> {isEmpty(C)}")
+#
+#for i in range(7):
+#    C, e, current = dequeue(C, current)
+#    print(f"Ho eliminato l'elemento -> {e}") 
+#
+#print(f"Coda dopo le cancellazione -> {C}")
+#
+#enqueue(C,10)
+#print(f"Coda dopo l'ultimo inserimento -> {C}")
+#
+#print(f"L'elemento in cima è -> {first(C,current)}")
 
-print(f"La coda è vuota -> {isEmpty(C)}")
-for i in range(10):
-    len_P = enqueue(C,i)
-
-print(f"Coda dopo gli inserimento -> {C}")
-print(f"La coda è vuota -> {isEmpty(C)}")
-
-for i in range(7):
-    C, e, current = dequeue(C, current)
-    print(f"Ho eliminato l'elemento -> {e}") 
-
-print(f"Coda dopo le cancellazione -> {C}")
-
-enqueue(C,10)
-print(f"Coda dopo l'ultimo inserimento -> {C}")
-
-print(f"L'elemento in cima è -> {first(C,current)}")
 
