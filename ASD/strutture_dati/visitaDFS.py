@@ -20,10 +20,23 @@ def visitaBFS(L):
                 len_P = P.push(Pila,len_P,2*u+1)
     return L
 
-def visitaBFS_ricorsiva():
-    ...
+def visitaBFS_ricorsiva(L, i):
+    if i < len(L):
+        L[i][1] = True
+        print(f"Visito nodo : {L[i][0]}")
 
+        left = 2*i+ 1
+        right = 2*i + 2
+        
+        if left < len(L):
+            visitaBFS_ricorsiva(L, left)
+        if right < len(L):
+            visitaBFS_ricorsiva(L, right)
+a = [[0, False], [1, False], [2, False], [3, False], [4, False], [5, False], [6, False], [7, False], [8, False]]
+b = [[0, False], [1, False], [2, False], [3, False], [4, False], [5, False], [6, False], [7, False], [8, False]]
 
-l = [[0, False], [1, False], [2, False], [3, False], [4, False], [5, False], [6, False], [7, False], [8, False]]
-visitaBFS(l)
+print("Visita DFS implementata con pila: ")
+visitaBFS(a)
+print("\nVisita DFS implementata con ricorsione: ")
+visitaBFS_ricorsiva(b,0)
 
