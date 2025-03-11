@@ -1,0 +1,19 @@
+#main{
+    float: left;
+    width: 650px;
+    margin-right: 20px;
+}
+
+#extras{
+    float: left;
+    width: 250px;
+}
+
+#footer{
+    clear: left;
+}
+
+#wrapper{
+    width: 920px;
+    margin: 0 auto;
+}
