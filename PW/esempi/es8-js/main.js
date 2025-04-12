@@ -22,7 +22,7 @@ console.log(myName.toUpperCase());  //stampo su console
 
 "use strict";
 /* 
-    Per fare in modo che non faccia supposizioni azzardate possiamo utilizzare la modalità in modo tale che 
+    Per fare in modo che non faccia supposizioni azzardate possiamo utilizzare la modalità "use strict "in modo tale che 
     mi riporta gli errori
 */
 
