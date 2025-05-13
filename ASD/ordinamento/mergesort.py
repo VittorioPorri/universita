@@ -6,7 +6,7 @@ def mergeSort(l : list, i : int, f : int) -> None:
     mergeSort(l,m+1,f)
     merge(l,i,m,m+1,f)
 
-def merge(l : list, i1 : int, f1 : int, i2 : int, f2 : int) -> list:
+def merge(l : list, i1 : int, f1 : int, i2 : int, f2 : int) :
     x = [0]*(f2-i1+1)
     h = 0
 

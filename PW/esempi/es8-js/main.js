@@ -1,4 +1,7 @@
+"use strict";
 // Questo è un commento 
+/*anche questo lo è */
+
 
 let myName = "lorenzo"; 
 
@@ -20,7 +23,6 @@ console.log(myName.toUpperCase());  //stampo su console
     - "45" + 3 ritorna "453" poichè interpreta il "+" come concatenazione
 */
 
-"use strict";
 /* 
     Per fare in modo che non faccia supposizioni azzardate possiamo utilizzare la modalità "use strict "in modo tale che 
     mi riporta gli errori

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+<script>
+    const container = document.querySelector(".container");
+    fetch("http://127.0.0.1:5500/universita/PW/esempi/es11-chiamate/data.json")
+
+    .then((resp) =>{
+        if (resp.status != 200) return new Error(resp.status)
+        return resp.json()
+    }).then((data) => {
+        console.log(data);
+        data.forEach(element => {
+           const p = document.createElement("p")
+           p.innerHTML  = `Il docente ${element.docente} insegna ${element.corso} che da crediti pari a ${element.crediti}` 
+           container.appendChild(p)
+        });
+    }).catch(console.error)
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+<script>
+    const container = document.querySelector(".container");
+    const myCall = async function () {
+        try{
+            const resp = await fetch("http://127.0.0.1:5500/universita/PW/esempi/es11-chiamate/data.json")
+            //come se fossi nella then ma è tutto mascherato da await
+            if(resp.status == 200) {
+                const data = await resp.json()//torna una promise
+                data.forEach(element => {
+                    const p = document.createElement("p")
+                    p.innerHTML  = `Il docente ${element.docente} insegna ${element.corso} che da crediti pari a ${element.crediti}` 
+                    container.appendChild(p)
+                });
+            }
+        }catch(err){
+            console.error(err)
+        }
+    }
+
+    myCall()
+</script>
+</html>

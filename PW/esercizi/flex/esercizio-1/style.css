@@ -1,0 +1,62 @@
+/* Layout generale */
+body, html {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+  
+/* Container delle card */
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 5%;
+
+}
+  
+/* Card */
+.card {
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+  
+/* Immagine in cima */
+.card-img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+  
+/* Testo */
+.text {
+    padding: 16px;
+}
+  
+.text p {
+    color: #555;
+}
+
+/*Se lo schermo massimo è di 768px*/
+@media screen and (max-width: 768px) {
+    body, html {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
+  
+    .cardContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
