@@ -79,4 +79,4 @@ n.child_append(v, 2)
 n.child_append(z, 1)
 
 W = 10
-print(treeCutBetter(a, W, 0))
+print("Il numero di tagli è : "+ str(treeCutBetter(a, W, 0)))
