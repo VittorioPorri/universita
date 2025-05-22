@@ -1,0 +1,8 @@
+GET http://127.0.0.1:9090/data
+
+###
+GET http://127.0.0.1:9090/secure
+
+###
+GET http://127.0.0.1:9090/secure
+Authorization:Bearer passwordsegreta

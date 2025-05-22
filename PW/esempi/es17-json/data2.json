@@ -1,0 +1,13 @@
+{
+    "nome" : "Mario",
+    "cognome" : "Rossi",
+    "eta" : 30,
+    "corsi" : ["Pw","PJDM" ,"SD"],
+    "id": 123456,
+    "media": 28.5,
+    "data" : {
+        "dd" : 22,
+        "mm" : 5,
+        "aa" : 25
+    }
+}

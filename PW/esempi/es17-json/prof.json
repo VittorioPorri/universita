@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Mario",
+        "corso" : "Pw",
+        "crediti" : 6
+    },
+    {
+        "id": 2,
+        "name": "Basili",
+        "corso" : "AI",
+        "crediti" : 6
+    },
+    {
+        "id": 3,
+        "name": "Luglio",
+        "corso" : "FT",
+        "crediti" : 6
+    },
+    {
+        "id": 4,
+        "name": "Croce",
+        "corso" : "So",
+        "crediti" : 12
+    }
+]

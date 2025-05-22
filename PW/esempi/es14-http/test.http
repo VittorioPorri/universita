@@ -1,0 +1,25 @@
+GET http://127.0.0.1:8080/ 
+
+###
+GET http://www.uniroma2.it 
+
+###
+GET http://127.0.0.1:8080/about?user=vitto&id=3
+
+###
+POST http://127.0.0.1:8080/about 
+Content-Type: application/x-www-form-urlencoded
+
+user=vitto&id=3
+
+###
+GET http://127.0.0.1:8080/users/21/aula/b3
+
+###
+POST http://127.0.0.1:8080/users/login
+Content-Type: application/json
+
+{"user": "Vitto"}
+
+###
+GET http://127.0.0.1:8080/users/logout
