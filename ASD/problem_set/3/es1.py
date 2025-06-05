@@ -54,29 +54,35 @@ z = Nodo("Z")
 
 
 
-a.child_append(b, 3)
-a.child_append(c, 2)
+# a.child_append(b, 3)
+# a.child_append(c, 2)
 
-b.child_append(d, 2)
-b.child_append(e, 1)
-b.child_append(f, 5)
-c.child_append(g, 1)
-c.child_append(h, 1)
+# b.child_append(d, 2)
+# b.child_append(e, 1)
+# b.child_append(f, 5)
+# c.child_append(g, 1)
+# c.child_append(h, 1)
 
-d.child_append(i, 2)
-d.child_append(l, 3)
-f.child_append(m, 1)
-h.child_append(n, 2)
-h.child_append(o, 2)
+# d.child_append(i, 2)
+# d.child_append(l, 3)
+# f.child_append(m, 1)
+# h.child_append(n, 2)
+# h.child_append(o, 2)
 
-i.child_append(p, 3)
-i.child_append(q, 2)
-m.child_append(r, 2)
-m.child_append(s, 5)
-m.child_append(t, 1)
-n.child_append(u, 1)
-n.child_append(v, 2)
-n.child_append(z, 1)
+# i.child_append(p, 3)
+# i.child_append(q, 2)
+# m.child_append(r, 2)
+# m.child_append(s, 5)
+# m.child_append(t, 1)
+# n.child_append(u, 1)
+# n.child_append(v, 2)
+# n.child_append(z, 1)
 
-W = 10
+a.child_append(b,2)
+a.child_append(c,2)
+
+b.child_append(d,4)
+c.child_append(e,4)
+
+W = 5
 print("Il numero di tagli è : "+ str(treeCutBetter(a, W, 0)))
