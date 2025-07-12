@@ -1,0 +1,92 @@
+body {
+    width: 1000px;
+    margin: 10px auto;
+}
+
+.nascondi{
+    display : none;
+}
+
+.overlay{
+    position: fixed;
+    top : 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:#333;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.overlay h2{
+    opacity: 1;
+    color: blue;
+}
+
+.overlay p{
+    position: fixed;
+    top : 0;
+    right: 10px;
+    color: red;
+}
+
+header {
+    border: 1px solid #a1a1a1;
+}
+
+main {
+    height: 220px;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid #a1a1a1;
+}
+
+header h1 {
+    margin: 20px auto;
+    text-align: center;
+}
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 110px;
+}
+
+.conteiner section {
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (min-width: 681px) and (max-width: 1020px) {
+    body {
+        width: 700px;
+    }
+    main {
+        height: 330px;
+    }
+    .conteiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 680px) {
+    body {
+        width: 100%;
+    }
+    main {
+        height: 660px;
+    }
+
+    .conteiner {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

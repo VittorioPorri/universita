@@ -1,0 +1,36 @@
+body{
+    min-width: 400px;
+    margin: 20px auto;
+}
+
+
+header, footer{
+    text-align: center;
+    padding: 10px auto;
+    border: 1px solid black;
+    background-color: #f1f1f1;
+}
+
+
+main{
+    position: relative; /*creare un contenitore di riferimento per elementi absolute*/
+    height: 80vh;
+    border: 1px solid black;
+}
+
+.nascondi{
+    display: none;
+}
+
+@media(min-width : 600px){
+    body{
+        width: 500px;
+    }
+}
+
+
+@media(min-width : 1000px){
+    body{
+        width: 800px;
+    }
+}

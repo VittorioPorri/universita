@@ -1,0 +1,71 @@
+.container{
+    position: relative;
+    box-sizing: border-box;
+    max-width: 880px;
+    border:3px solid green;
+    margin: 0 auto;
+    padding: 20px; 
+}
+
+header{ 
+    text-align: center;
+}
+
+footer{
+    color: darkgreen;
+    text-align: center;
+}
+
+.nascondi{
+    display: none;
+}
+
+.visibile{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 0px;
+    left: 20%;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(128, 128, 128, 0.8);
+    font-size: 26px;
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+
+#galleria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: auto;
+}
+
+#galleria li{
+    height: 20vw;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    list-style: none;
+}
+
+
+@media (max-width : 500px) {
+    .container{
+        max-width: 480px;
+    }
+
+    #galleria{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto;
+    }
+}

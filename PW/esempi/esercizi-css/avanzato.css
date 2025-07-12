@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+div > div{
+    border-radius: 8px; /*Arrotonda il bordo*/
+    margin: 2%; 
+    background-color: lightgrey;
+    box-shadow: 2px 2px 5px black;
+}

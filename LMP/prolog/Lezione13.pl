@@ -17,7 +17,7 @@ edge(node([X|A],[B],[C]),node([A],[X|B],[C]):-
     ordinata([X|B]),
     ordinata([C]).
 
-edge(node([X|A],[B],[c]),node([A],[B],[X|C])):-
+edge(node([X|A],[B],[C]),node([A],[B],[X|C])):-
     ordinata([X|A]),
     ordinata([B]),
     ordinata([X|C]).

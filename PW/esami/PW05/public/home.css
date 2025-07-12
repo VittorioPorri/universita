@@ -1,0 +1,95 @@
+body{
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+}
+
+.over{
+    background-color: rgba(51, 51, 51, 0.8);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+}
+
+.over div{
+    position: relative;
+    width: 50%;
+    background-color: white;
+}
+
+.over div p{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+.container{
+    background-color: white;
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap; /*manda a capo gli elementi se non ci stanno*/
+    justify-content: space-between; /*il primo elemento è allineato all'inizio (a sinistra), 
+                                      l'ultimo elemento alla fine 
+                                      e eventuali spazi interni sono distribuiti uniformemente*/
+    align-items: center;
+}
+
+#menu{
+    gap: 20px
+}
+
+footer{
+    text-align: center;
+}
+
+.nascondi{
+    display: none;
+}
+
+.visibile{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+
+hr{
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.containerArticoli article{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+
+#bottone{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+@media (min-width : 1000px) {
+    #menu{
+        display: flex;
+        flex-direction: row;
+    }
+}

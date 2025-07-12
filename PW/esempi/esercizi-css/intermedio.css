@@ -1,0 +1,30 @@
+div{
+    padding: 20px;
+    margin: 30px;
+    background-color: lightgray;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.primo{
+    color: red;
+}
+
+.secondo{
+    color: blue;
+}
+
+.terzo{
+    color: yellow;
+}
+
+button{
+    box-shadow: 2px 2px 5px gray;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}

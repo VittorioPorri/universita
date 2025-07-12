@@ -1,0 +1,16 @@
+body{
+    width: 400px;
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.nascondi{
+    display: none;
+}
+
+@media (min-width: 800px){
+    body{
+        width: 700px;
+    }
+}

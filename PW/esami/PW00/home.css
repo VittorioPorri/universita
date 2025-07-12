@@ -1,0 +1,57 @@
+body{
+    width: 900px;
+    margin: 0 auto;
+}
+header{
+    border: 1px solid black ;
+}
+
+footer{
+    border: 1px solid black ;
+}
+
+.menuContainer{
+    display: flex;
+    align-items: center;
+}
+
+.menuContainer div{
+    width: 225px;
+    padding: 10px 0;
+    border: 1px solid black;
+    text-align: center;
+} 
+
+.articoliContainer{
+    display: flex;
+    align-items: center;
+}
+
+main section{
+    width: 300px;
+}
+
+@media (max-width: 999px) {
+    body{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .menuContainer{
+        display: block;
+    }
+
+    .nascondi{
+        display: none;
+
+    }
+
+    .articoliContainer{
+        display: block;
+    }
+
+    main section{
+        width: 100%;
+    }   
+
+}
