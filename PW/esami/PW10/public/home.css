@@ -1,0 +1,68 @@
+header{
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+main{
+    background-color: #f0f0f0;
+    padding: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-template-rows: auto;
+}
+
+main div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.daCompletare{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.completa{
+    background-color: #fff;
+    color: #888;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.completa p{
+    text-decoration: line-through;
+}
+.completa button{
+    color: white;
+}
+
+.attivo{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+}
+
+.inattivo{
+    background-color: grey;
+    padding: 10px;
+}
+
+footer{
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+}
+
+@media (min-width: 600px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
